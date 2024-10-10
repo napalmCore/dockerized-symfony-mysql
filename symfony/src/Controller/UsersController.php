@@ -27,10 +27,11 @@ class UsersController extends AbstractController
         //get user by id
         $user = $this->userRepository->findById($id);
 
-        return $this->render('page.html.twig', [
+        return $this->render('users.html.twig', [
             'title' => 'My Page',
             'heading' => 'Welcome to My Page',
-            'content' => 'This is the content of my page.'
+            'content' => 'This is the content of my page.',
+            'user' => $user
         ]);
     }
 }
