@@ -4,3 +4,6 @@ controllers:
 app_lucky_number:
     path: /lucky/number
     controller: App\Controller\LuckyController::number
+users:
+    path: /users
+    controller: App\Controller\UserController::index
