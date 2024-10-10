@@ -1,9 +1,6 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}My Custom Page Title{% endblock %}
-
-{% block body %}
-    <h2>{{ heading }}</h2>
-    <p>{{ content }}</p>
-        {{user.id}}
-{% endblock %}
+{% for user in users %}
+    <p>{{ user.id }}</p>
+    <p>{{ user.firstName }}</p>
+    <p>{{ user.lastName }}</p>
+    <p>{{ user.email }}</p>
+{% endfor %}
