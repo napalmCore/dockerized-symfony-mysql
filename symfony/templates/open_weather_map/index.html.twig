@@ -1,0 +1,21 @@
+<table> 
+    <tr>
+        <th>City</th>
+        <th>Temperature</th>
+        <th>Humidity</th>
+        <th>Pressure</th>
+        <th>Wind Speed</th>
+        <th>Wind Direction</th>
+    </tr>
+        <tr>
+            <td>{{ weathers.city.country }}</td>
+            <td>{{ weathers.temperature.attributes().value}}</td>
+            <td>{{ weathers.humidity.attributes().value}}</td>
+            <td>{{ weathers.pressure.attributes().value}}</td>
+            <td>{{ weathers.wind.speed.attributes().value}}</td>
+            <td>{{ weathers.wind.direction.attributes().name}}</td>
+
+
+        </tr>
+
+</table>
